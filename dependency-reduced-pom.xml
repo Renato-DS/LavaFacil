@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.rm.lavarapidorm</groupId>
-  <artifactId>CarwasheRR</artifactId>
-  <name>CarwasheRR</name>
+  <groupId>com.lavafacil</groupId>
+  <artifactId>LavaFacil</artifactId>
+  <name>lavaFacil</name>
   <version>2.0</version>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
         <configuration>
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.rm.lavarapidorm.LavaRapidoRM</mainClass>
+              <mainClass>com.lavafacil.LavaFacil</mainClass>
             </manifest>
           </archive>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.4</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -41,9 +42,9 @@
     </dependency>
   </dependencies>
   <properties>
-    <maven.compiler.target>17</maven.compiler.target>
-    <exec.mainClass>com.rm.lavarapidorm.LavaRapidoRM</exec.mainClass>
-    <maven.compiler.source>17</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>17</maven.compiler.target>
+    <exec.mainClass>com.lavafacil.LavaFacil</exec.mainClass>
+    <maven.compiler.source>17</maven.compiler.source>
   </properties>
 </project>
